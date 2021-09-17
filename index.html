@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+	.home-blog {
+		background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) !important;
+
+	}
+	.home-blog:hover {
+		background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) !important;
+        -webkit-transform :scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: all 0.3 s;
+	}
+	.text-white {
+		color: #fff !important;
+	}
+	.fixed-blog-img {
+		height: 220px;
+		object-fit: cover;
+		overflow: hidden;
+	}
+	.card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+		background-color: #fff;
+		background-clip: border-box;
+		border: 0.125rem solid rgba(0, 0, 0, 0.125);
+	}
+	.card-img-overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1.25rem;
+	}
+    .btn {
+    	padding: 10px, 50 px !important;
+    	font-size: 25px !important;
+    }
+</style>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div class="mb-3">
+						<div class="mb-3">
+  <label for="title" class="form-label">Post title</label>
+  <input type="text" class="form-control" id="title" placeholder="Post title" name="title">
+</div>
+<div class="mb-3">
+  <label for="image" class="form-label">Post image</label>
+  <input type="file" class="form-control" id="image"  name="image">
+</div>
+<div class="mb-3">
+  <label for="content" class="form-label">Post content</label>
+  <textarea class="form-control" id="content" rows="5" name="content"></textarea>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+  <div class="mb-3">
+  	<button type="submit" class="btn btn-primary">Add post</button>
+  </div>
+
+
+</body>
+</html>
